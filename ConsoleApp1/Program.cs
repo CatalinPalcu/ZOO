@@ -18,6 +18,8 @@ namespace ModelZoo
             Mammal platypus = new Mammal(Zoo.GenerateNewAnimalID(), AGender.Female, Mammal.Type.EggLayngMamal, 5, "fish bugs", "need access to the water", "Platypus");
             Mammal hippopotamus = new Mammal(Zoo.GenerateNewAnimalID(), AGender.Male, Mammal.Type.HoofedMamals, 500, "grass", "need a lake", "Hippopotamus");
 
+            Mammal horse = new Mammal(Zoo.GenerateNewAnimalID(), AGender.Male, Mammal.Type.HoofedMamals, 200, "grass");
+
             zoo1.AddNewAnimal(americanAlligator);
             zoo2.AddNewAnimal(americanAlligator);
             zoo2.AddNewAnimal(greenIguana);
@@ -25,6 +27,7 @@ namespace ModelZoo
             zoo2.AddNewAnimal(kookaburra);
             zoo1.AddNewAnimal(platypus);
             zoo2.AddNewAnimal(hippopotamus);
+            zoo1.AddNewAnimal(horse);
 
             zoo1.NextDay();
             zoo2.NextDay();
